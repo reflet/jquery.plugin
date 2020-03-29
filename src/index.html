@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>jQueryのプラグインを使ってみる</title>
+  <style tyle="text/css">
+    body{ font-family:Arial, Helvetica, sans-serif; color:#505050; }
+    .no{ width:3em; }
+    .cate{ width:20em; }
+    .count{ width:5em; }
+    .num{ text-align:right; }
+
+    /* plugin */
+    div.ex-table-container { background:#f0f0f0; border:solid 1px #d0d0d0; }
+    div.ex-table-body td { background:#fff; }
+  </style>
+</head>
+<body>
+  <table id="target1">
+    <thead>
+      <tr>
+        <th>No</th>
+        <th>Category</th>
+        <th>Count</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="no">1</td>
+        <td class="cate">Ajax</td>
+        <td class="count num">203</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Animation and Effects</td>
+        <td class="num">296</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Browser Tweaks</td>
+        <td class="num">78</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Data</td>
+        <td class="num">139</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>DOM</td>
+        <td class="num">141</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>Drag-and-Drop</td>
+        <td class="num">37</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>Events</td>
+        <td class="num">130</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>Forms</td>
+        <td class="num">364</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>Integration</td>
+        <td class="num">101</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>JavaScript</td>
+        <td class="num">148</td>
+      </tr>
+      <tr>
+        <td>11</td>
+        <td>jQuery Extensions</td>
+        <td class="num">219</td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td>Layout</td>
+        <td class="num">183</td>
+      </tr>
+      <tr>
+        <td>13</td>
+        <td>Media</td>
+        <td class="num">129</td>
+      </tr>
+      <tr>
+        <td>14</td>
+        <td>Menus</td>
+        <td class="num">92</td>
+      </tr>
+      <tr>
+        <td>15</td>
+        <td>Metaplugin</td>
+        <td class="num">26</td>
+      </tr>
+      <tr>
+        <td>16</td>
+        <td>Navigation</td>
+        <td class="num">148</td>
+      </tr>
+      <tr>
+        <td>17</td>
+        <td>Tables</td>
+        <td class="num">74</td>
+      </tr>
+      <tr>
+        <td>18</td>
+        <td>User Interface</td>
+        <td class="num">644</td>
+      </tr>
+      <tr>
+        <td>19</td>
+        <td>Utilities</td>
+        <td class="num">327</td>
+      </tr>
+      <tr>
+        <td>20</td>
+        <td>Widgets</td>
+        <td class="num">241</td>
+      </tr>
+      <tr>
+        <td>21</td>
+        <td>Windows and Overlays</td>
+        <td class="num">102</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>21</td>
+        <td></td>
+        <td class="count num">2532</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <script src="./js/jquery-1.3.1.min.js"></script>
+  <script src="./js/jquery.extable.0.1.1.js"></script>
+  <script>
+    jQuery(function($) {
+      $('#target1').exTable();
+    });
+  </script>
+</body>
+</html>
+
